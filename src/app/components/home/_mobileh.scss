@@ -1,0 +1,45 @@
+//Widescreens
+@include mediaXl {
+}
+
+//Desktops & Laptops
+@include mediaLg {
+}
+
+//Tables & Small Laptops
+@include mediaMd {
+  #intro {
+    align-items: left;
+    text-align: left;
+    font-size: 10px;
+  }
+
+  #intro h1 {
+    font-size: 5rem;
+  }
+
+  #intro p {
+    font-size: 2rem;
+  }
+}
+
+// Smartphones
+@include mediaSm {
+  #intro {
+    align-items: left;
+    text-align: left;
+    font-size: 10px;
+  }
+
+  #intro h1 {
+    font-size: 2.5rem;
+  }
+
+  #intro p {
+    font-size: 1rem;
+  }
+
+  .icons {
+    size: 10px;
+  }
+}
