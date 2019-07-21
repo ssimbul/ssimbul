@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @import "@angular/material/prebuilt-themes/deeppurple-amber.css";
-
+@import "configh";
+@import "mobileh";
 $primary-color: white;
 $secondary-color: #dfd689;
 $tert-color: #52cebf;
@@ -34,17 +35,6 @@ $tert-color: #52cebf;
 }
 body {
   color: $primary-color;
-}
-
-.nav-button {
-  color: $secondary-color;
-  font-size: 20px;
-
-  &:hover {
-    color: #dfd689;
-
-    transition: all 0.5s ease-out;
-  }
 }
 
 h1,
