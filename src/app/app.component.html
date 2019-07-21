@@ -1,47 +1,18 @@
 <!--The content below is only a placeholder and can be replaced.-->
-
+<div id="overlay">ssimbul.com</div>
 <body>
-  <nav>
-    <button
-      routerLink="/home"
-      routerLinkActive="active"
-      class="nav-button"
-      mat-button
+  <nav mat-tab-nav-bar mat-align-tabs="end">
+    <a
+      style="color:white"
+      mat-tab-link
+      *ngFor="let link of navLinks"
+      [routerLink]="link.link"
+      routerLinkActive
+      #rla="routerLinkActive"
+      [active]="rla.isActive"
     >
-      HOME
-    </button>
-    <button
-      routerLink="/edu"
-      routerLinkActive="active"
-      class="nav-button"
-      mat-button
-    >
-      ACADEMICS
-    </button>
-    <button
-      routerLink="/exp"
-      routerLinkActive="active"
-      class="nav-button"
-      mat-button
-    >
-      EXPERIENCE
-    </button>
-    <button
-      routerLink="/proj"
-      routerLinkActive="active"
-      class="nav-button"
-      mat-button
-    >
-      PROJECTS
-    </button>
-    <button
-      routerLink="/contact"
-      routerLinkActive="active"
-      class="nav-button"
-      mat-button
-    >
-      CONTACT ME
-    </button>
+      {{ link.label }}
+    </a>
   </nav>
 </body>
 

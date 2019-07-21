@@ -1,0 +1,14 @@
+@import "~@angular/material/theming";
+@include mat-core();
+
+$web-theme-primary: mat-palette($mat-yellow, A700);
+$web-theme-accent: mat-palette($mat-teal, A700);
+$web-theme-warn: mat-palette($mat-red);
+
+$web-theme: mat-light-theme(
+  $web-theme-primary,
+  $web-theme-accent,
+  $web-theme-warn
+);
+
+@include angular-material-theme($web-theme);
