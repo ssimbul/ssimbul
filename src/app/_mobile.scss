@@ -1,0 +1,30 @@
+//Widescreens
+@include mediaXl {
+}
+
+//Desktops & Laptops
+@include mediaLg {
+  #overlay {
+    display: none;
+  }
+}
+
+//Tables & Small Laptops
+@include mediaMd {
+  .mat-tab-link {
+    min-width: 0px;
+  }
+  #overlay {
+    display: none;
+  }
+}
+
+// Smartphones
+@include mediaSm {
+  .mat-tab-link {
+    font-size: 10px;
+  }
+  #overlay {
+    display: none;
+  }
+}
