@@ -1,11 +1,48 @@
 <!--The content below is only a placeholder and can be replaced.-->
 
 <body>
-  <button class="nav-button" mat-button>HOME</button>
-  <button class="nav-button" mat-button>ACADEMICS</button>
-  <button class="nav-button" mat-button>EXPERIENCE</button>
-  <button class="nav-button" mat-button>PROJECTS</button>
-  <button class="nav-button" mat-button>CONTACT ME</button>
+  <nav>
+    <button
+      routerLink="/home"
+      routerLinkActive="active"
+      class="nav-button"
+      mat-button
+    >
+      HOME
+    </button>
+    <button
+      routerLink="/edu"
+      routerLinkActive="active"
+      class="nav-button"
+      mat-button
+    >
+      ACADEMICS
+    </button>
+    <button
+      routerLink="/exp"
+      routerLinkActive="active"
+      class="nav-button"
+      mat-button
+    >
+      EXPERIENCE
+    </button>
+    <button
+      routerLink="/proj"
+      routerLinkActive="active"
+      class="nav-button"
+      mat-button
+    >
+      PROJECTS
+    </button>
+    <button
+      routerLink="/contact"
+      routerLinkActive="active"
+      class="nav-button"
+      mat-button
+    >
+      CONTACT ME
+    </button>
+  </nav>
 </body>
 
 <!-- <img id="profile" src="{{ profile }}" /> -->
