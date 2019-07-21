@@ -1,11 +1,19 @@
 <!--The content below is only a placeholder and can be replaced.-->
-
+<div id="overlay">ssimbul.com</div>
 <body>
-  <button class="nav-button" mat-button>HOME</button>
-  <button class="nav-button" mat-button>ACADEMICS</button>
-  <button class="nav-button" mat-button>EXPERIENCE</button>
-  <button class="nav-button" mat-button>PROJECTS</button>
-  <button class="nav-button" mat-button>CONTACT ME</button>
+  <nav mat-tab-nav-bar mat-align-tabs="end">
+    <a
+      style="color:white"
+      mat-tab-link
+      *ngFor="let link of navLinks"
+      [routerLink]="link.link"
+      routerLinkActive
+      #rla="routerLinkActive"
+      [active]="rla.isActive"
+    >
+      {{ link.label }}
+    </a>
+  </nav>
 </body>
 
 <!-- <img id="profile" src="{{ profile }}" /> -->

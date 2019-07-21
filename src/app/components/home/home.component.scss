@@ -1,14 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
 @import "@angular/material/prebuilt-themes/deeppurple-amber.css";
-@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
 $primary-color: white;
-$secondary-color: white;
+$secondary-color: #dfd689;
+$tert-color: #52cebf;
 
 .first {
   color: $primary-color;
 }
 .second {
   color: $secondary-color;
+}
+
+.third {
+  color: $tert-color;
 }
 
 #intro {
@@ -152,7 +157,7 @@ h3 {
     opacity: 1;
   }
   99.9% {
-    border-right: 0.15em solid orange;
+    border-right: 0.15em solid #dfd689;
   }
   100% {
     opacity: 1;

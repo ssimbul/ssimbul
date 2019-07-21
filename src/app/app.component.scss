@@ -1,0 +1,37 @@
+/* You can add global styles to this file, and also import other style files */
+
+$primary-color: white;
+$secondary-color: #dfd689;
+$tert-color: #52cebf;
+
+.first {
+  color: $primary-color;
+}
+.second {
+  color: $secondary-color;
+}
+
+.third {
+  color: $tert-color;
+}
+
+.nav-button {
+  color: $primary-color;
+  font-size: 20px;
+
+  &:hover {
+    color: $secondary-color;
+
+    transition: all 0.5s ease-out;
+  }
+}
+#overlay {
+  position: fixed;
+  top: 25px;
+  left: 50px;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  font-weight: 100;
+  font-size: 1rem;
+}
