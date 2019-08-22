@@ -17,24 +17,19 @@ export class AppComponent implements OnInit {
         index: 0
       },
       {
-        label: "EDUCATION",
-        link: "./edu",
+        label: "ABOUT ME",
+        link: "./about",
         index: 1
-      },
-      {
-        label: "EXPERIENCE",
-        link: "./exp",
-        index: 2
       },
       {
         label: "PROJECTS",
         link: "./proj",
-        index: 3
+        index: 2
       },
       {
         label: "CONTACT",
         link: "./contact",
-        index: 4
+        index: 3
       }
     ];
   }
