@@ -6,6 +6,9 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./about.component.scss"]
 })
 export class AboutComponent implements OnInit {
+  profile = "../assets/img/placeholder.png";
+  background = "../assets/img/carleton.jpg";
+
   constructor() {}
 
   ngOnInit() {}

@@ -1,0 +1,94 @@
+$primary-color: white;
+$secondary-color: #dfd689;
+$tert-color: #52cebf;
+
+.heading {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 200;
+  color: white;
+  text-align: center;
+  margin: 1em 0 3em 0;
+}
+
+#line {
+  width: 225px;
+  height: 35px;
+  border-bottom: 3px solid $secondary-color;
+  position: absolute;
+}
+
+#top,
+#line {
+  font-size: 3em;
+  display: inline;
+}
+
+#profile {
+  width: 250px;
+  display: block;
+  margin: 3em 0 0 8em;
+  width: 300px;
+  border-radius: 50%;
+  position: relative;
+  left: 20px;
+}
+
+.edu-card {
+  max-width: 400px;
+  bottom: 730px;
+  left: 620px;
+}
+
+.edu-header-image {
+  background-image: url("../../../assets/img/edu_icon.PNG");
+  background-size: cover;
+}
+
+.mat-card-avatar {
+  height: 50px;
+}
+.mat-card {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.mat-card-content {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 200;
+  font-size: 1em;
+}
+
+.skill-card {
+  max-width: 596px;
+  height: 370px;
+  left: 1065px;
+  bottom: 329px;
+}
+.skill-header-image {
+  background-image: url("../../../assets/img/skill_icon.PNG");
+  background-size: cover;
+  width: 50px;
+}
+.mat-card-image {
+  width: 400px;
+  position: relative;
+  left: 15px;
+  padding-top: 4px;
+}
+
+#edu-info {
+  font-weight: 300;
+}
+#none {
+  margin-top: 10px;
+}
+
+.experience {
+  padding-top: 15px;
+}
+
+.exp-card {
+  max-width: 1041px;
+  height: 260px;
+  bottom: 730px;
+  left: 620px;
+}
