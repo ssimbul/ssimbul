@@ -22,20 +22,30 @@ $tert-color: #52cebf;
   font-size: 3em;
   display: inline;
 }
-
+.cards {
+  margin-left: 117px;
+}
+.side-cards {
+  bottom: 435px;
+  position: relative;
+  height: 0;
+}
 #profile {
-  width: 250px;
   display: block;
-  margin: 3em 0 0 8em;
   width: 300px;
   border-radius: 50%;
-  position: relative;
-  left: 20px;
+  margin: auto;
+  margin-top: 20px;
 }
-
+.personal-card {
+  max-width: 596px;
+  bottom: 34px;
+  left: -20px;
+  height: 739px;
+}
 .edu-card {
   max-width: 400px;
-  bottom: 730px;
+  bottom: 771px;
   left: 620px;
 }
 
@@ -59,9 +69,9 @@ $tert-color: #52cebf;
 
 .skill-card {
   max-width: 596px;
-  height: 370px;
+  height: 369px;
   left: 1065px;
-  bottom: 329px;
+  bottom: 370px;
 }
 .skill-header-image {
   background-image: url("../../../assets/img/skill_icon.PNG");
@@ -88,7 +98,12 @@ $tert-color: #52cebf;
 
 .exp-card {
   max-width: 1041px;
-  height: 260px;
-  bottom: 730px;
+  height: 325px;
+  bottom: 758px;
   left: 620px;
+}
+
+body,
+html {
+  overflow: hidden;
 }
