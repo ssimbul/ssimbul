@@ -1,0 +1,103 @@
+//Widescreens
+@include mediaXl {
+  .mobile-container {
+    display: none;
+  }
+}
+
+//Desktops & Laptops
+@include mediaLg {
+  .l-line {
+    left: 740px !important;
+  }
+  .r-line {
+    right: 740px !important;
+  }
+
+  #line {
+    width: 225px !important;
+  }
+}
+
+//Tablets & Small Laptops
+@include mediaMd {
+  .l-line {
+    left: 610px !important;
+  }
+  .r-line {
+    right: 610px !important;
+  }
+
+  #line {
+    width: 125px !important;
+  }
+}
+
+// Smartphones
+@include mediaSm {
+  #top,
+  #line {
+    font-size: 1.5em !important;
+    padding-top: 75px;
+  }
+
+  #line {
+    display: none !important;
+  }
+
+  #profile {
+    width: 200px !important;
+  }
+
+  .grid-container {
+    display: none !important;
+  }
+
+  .mobile-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "Personal" "Edu" "Skills" "Exp";
+    row-gap: 1em;
+  }
+
+  .Personal {
+    grid-area: Personal;
+  }
+
+  .Edu {
+    grid-area: Edu;
+  }
+
+  .Skills {
+    grid-area: Skills;
+  }
+
+  .Exp {
+    grid-area: Exp;
+  }
+
+  .personal-card {
+    height: 400px !important;
+  }
+
+  .edu-card {
+    height: 400px !important;
+  }
+
+  .skill-card {
+    height: 400px !important;
+  }
+
+  .exp-card {
+    height: 400px !important;
+  }
+
+  .mat-card-image {
+    width: 310px !important;
+  }
+
+  .mat-tab-label {
+    font-size: 10px;
+  }
+}

@@ -1,3 +1,6 @@
+/* You can add global styles to this file, and also import other style files */
+@import "configa";
+@import "mobilea";
 $primary-color: white;
 $secondary-color: #dfd689;
 $tert-color: #52cebf;
@@ -7,7 +10,7 @@ $tert-color: #52cebf;
   font-weight: 200;
   color: white;
   text-align: center;
-  margin: 1em 0 3em 0;
+  margin: 1em 0 1em 0;
 }
 
 .default {
@@ -23,6 +26,14 @@ $tert-color: #52cebf;
   position: absolute;
 }
 
+.l-line {
+  left: 420px;
+}
+
+.r-line {
+  right: 420px;
+}
+
 #top,
 #line {
   font-size: 3em;
@@ -31,11 +42,7 @@ $tert-color: #52cebf;
 .cards {
   margin-left: 117px;
 }
-.side-cards {
-  bottom: 435px;
-  position: relative;
-  height: 0;
-}
+
 #profile {
   display: block;
   width: 300px;
@@ -44,15 +51,10 @@ $tert-color: #52cebf;
   margin-top: 20px;
 }
 .personal-card {
-  max-width: 596px;
-  bottom: 34px;
-  left: -20px;
-  height: 734px;
+  height: 732px;
 }
 .edu-card {
-  max-width: 400px;
-  bottom: 771px;
-  left: 620px;
+  height: 374px;
 }
 
 .edu-header-image {
@@ -74,15 +76,8 @@ $tert-color: #52cebf;
 }
 
 .skill-card {
-  // max-width: 596px;
-  // height: 374px;
-  // left: 1065px;
-  // bottom: 364px;
-
   max-width: 596px;
   height: 374px;
-  left: 1065px;
-  bottom: 364px;
 }
 .skill-header-image {
   background-image: url("../../../assets/img/skill_icon.PNG");
@@ -108,15 +103,7 @@ $tert-color: #52cebf;
 }
 
 .exp-card {
-  max-width: 1041px;
-  height: 314px;
-  bottom: 758px;
-  left: 620px;
-}
-
-body,
-html {
-  overflow: hidden;
+  height: 310px;
 }
 
 ul {
@@ -154,4 +141,48 @@ li {
 /* Styles for tab labels */
 .mat-tab-label {
   color: white;
+}
+
+//GRID LAYOUT
+.grid-container {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  grid-template-rows: 765px;
+  grid-template-areas: "Personal Side";
+  column-gap: 1rem;
+  margin: 0 2em 0 2em;
+}
+
+.Personal {
+  grid-area: Personal;
+}
+
+.Side {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "Top-Side" "Bot-Side";
+  grid-area: Side;
+  row-gap: 1rem;
+}
+
+.Top-Side {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "edu skills";
+  grid-area: Top-Side;
+  column-gap: 1rem;
+}
+
+.edu {
+  grid-area: edu;
+}
+
+.skills {
+  grid-area: skills;
+}
+
+.Bot-Side {
+  grid-area: Bot-Side;
 }

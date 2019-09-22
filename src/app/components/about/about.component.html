@@ -1,121 +1,257 @@
-<div class="heading">
-  <div style="left:420px" id="line"></div>
-  <div id="top">Meet Spencer Simbul</div>
-  <div style="right:420px" id="line"></div>
-</div>
-<div class="cards">
-  <mat-card class="personal-card">
-    <mat-card-content>
-      <img id="profile" [src]="profile" />
-      <div class="default" style="text-align: center; font-size: 1.5em;">
-        Markham, Ontario
-      </div>
-      <div
-        class="default"
-        style="text-align: center;font-size:1.1em; font-weight:400"
-      >
-        Age: 20
-      </div>
-      <div class="default">Academic Time Line</div>
-
-      <div class="default">Currently: Studying (3A)</div>
-      <div class="default">Next Available Co-op Work Term</div>
-      <div class="default">Work Terms Completed: 1</div>
-    </mat-card-content>
-  </mat-card>
-
-  <div class="side-cards">
-    <mat-card class="skill-card">
-      <mat-card-header>
-        <mat-card-title class="default" id="none">What I Know</mat-card-title>
-      </mat-card-header>
-      <mat-card-content>
-        <mat-tab-group mat-align-tabs="end">
-          <mat-tab label="Software Skils">
-            <ul>
-              <li *ngFor="let s of skillList">
-                <div *ngIf="isSoftware(s.type)">
-                  <img
-                    style="width:22px;display: inline-flex; vertical-align: middle;"
-                    [src]="s.icon"
-                    alt=""
-                  />
-                  <span
-                    style="color:white;  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-weight: 300;font-size:1.1em"
-                  >
-                    {{ s.name }}
-                  </span>
-                </div>
-              </li>
-            </ul>
-          </mat-tab>
-          <mat-tab label="Hardware Skills">
-            <ul>
-              <li *ngFor="let s of skillList">
-                <div *ngIf="isHardware(s.type)">
-                  <img
-                    style="width:22px;display: inline-flex; vertical-align: middle;"
-                    [src]="s.icon"
-                    alt=""
-                  />
-                  <span
-                    style="color:white;  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-weight: 300;font-size:1.0em"
-                  >
-                    {{ s.name }}
-                  </span>
-                </div>
-              </li>
-            </ul>
-          </mat-tab>
-          <mat-tab label="Personal Skills">
-            <ul>
-              <li *ngFor="let s of skillList">
-                <div *ngIf="isPersonal(s.type)">
-                  <span
-                    style="color:white;  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-weight: 300;font-size:1.1em"
-                  >
-                    {{ s.name }}
-                  </span>
-                </div>
-              </li>
-            </ul>
-          </mat-tab>
-        </mat-tab-group>
-      </mat-card-content>
-      <mat-card-actions> </mat-card-actions>
-    </mat-card>
-
-    <mat-card class="edu-card">
-      <mat-card-header>
-        <div mat-card-avatar class="edu-header-image"></div>
-        <mat-card-title class="default">Education</mat-card-title>
-        <mat-card-subtitle class="default"
-          >Carleton University | Ottawa,Ontario</mat-card-subtitle
-        >
-      </mat-card-header>
-      <img style="width: 400px;" mat-card-image [src]="background" />
-      <mat-card-content id="edu-info">
-        <p class="default">Program: B.Eng Electrical Engineering, 3rd Year</p>
-        <p class="default">CGPA: 10.80 / 12.00</p>
-      </mat-card-content>
-      <mat-card-actions>
-        <button mat-button class="default">COURSES TAKEN</button>
-        <button mat-button class="default">AWARDS & SCHOLARSHIPS</button>
-      </mat-card-actions>
-    </mat-card>
-
-    <mat-card class="exp-card">
-      <mat-card-header>
-        <div mat-card-avatar>
-          <i
-            style="color:white; display: inline-flex; vertical-align: middle; "
-            class="fas fa-briefcase fa-2x"
-          ></i>
-        </div>
-        <mat-card-title class="default" id="none">Experience</mat-card-title>
-      </mat-card-header>
-
-      <mat-card-content> </mat-card-content>
-    </mat-card>
+<body>
+  <div class="heading">
+    <div class="l-line" id="line"></div>
+    <div id="top">Meet Spencer Simbul</div>
+    <div class="r-line" id="line"></div>
   </div>
-</div>
+
+  <div class="grid-container">
+    <div class="Personal">
+      <mat-card class="personal-card">
+        <mat-card-content>
+          <img id="profile" [src]="profile" />
+          <div class="default" style="text-align: center; font-size: 1.5em;">
+            Markham, Ontario
+          </div>
+          <div
+            class="default"
+            style="text-align: center;font-size:1.1em; font-weight:400"
+          >
+            Age: 20
+          </div>
+          <div class="default">Academic Time Line</div>
+
+          <div class="default">Currently: Studying (3A)</div>
+          <div class="default">Next Available Co-op Work Term</div>
+          <div class="default">Work Terms Completed: 1</div>
+        </mat-card-content>
+      </mat-card>
+    </div>
+    <div class="Side">
+      <div class="Top-Side">
+        <div class="edu">
+          <mat-card class="edu-card">
+            <mat-card-header>
+              <div mat-card-avatar class="edu-header-image"></div>
+              <mat-card-title class="default">Education</mat-card-title>
+              <mat-card-subtitle class="default"
+                >Carleton University | Ottawa,Ontario</mat-card-subtitle
+              >
+            </mat-card-header>
+            <img style="width: 400px;" mat-card-image [src]="background" />
+            <mat-card-content id="edu-info">
+              <p class="default">
+                Program: B.Eng Electrical Engineering, 3rd Year
+              </p>
+              <p class="default">CGPA: 10.80 / 12.00</p>
+            </mat-card-content>
+            <mat-card-actions>
+              <button mat-button class="default">COURSES TAKEN</button>
+              <button mat-button class="default">AWARDS & SCHOLARSHIPS</button>
+            </mat-card-actions>
+          </mat-card>
+        </div>
+        <div class="skills">
+          <mat-card class="skill-card">
+            <mat-card-header>
+              <mat-card-title class="default" id="none"
+                >What I Know</mat-card-title
+              >
+            </mat-card-header>
+            <mat-card-content>
+              <mat-tab-group mat-align-tabs="end">
+                <mat-tab label="Software Skils">
+                  <ul>
+                    <li *ngFor="let s of skillList">
+                      <div *ngIf="isSoftware(s.type)">
+                        <img
+                          style="width:22px;display: inline-flex; vertical-align: middle;"
+                          [src]="s.icon"
+                          alt=""
+                        />
+                        <span
+                          style="color:white;  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-weight: 300;font-size:1.1em"
+                        >
+                          {{ s.name }}
+                        </span>
+                      </div>
+                    </li>
+                  </ul>
+                </mat-tab>
+                <mat-tab label="Hardware Skills">
+                  <ul>
+                    <li *ngFor="let s of skillList">
+                      <div *ngIf="isHardware(s.type)">
+                        <img
+                          style="width:22px;display: inline-flex; vertical-align: middle;"
+                          [src]="s.icon"
+                          alt=""
+                        />
+                        <span
+                          style="color:white;  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-weight: 300;font-size:1.0em"
+                        >
+                          {{ s.name }}
+                        </span>
+                      </div>
+                    </li>
+                  </ul>
+                </mat-tab>
+                <mat-tab label="Personal Skills">
+                  <ul>
+                    <li *ngFor="let s of skillList">
+                      <div *ngIf="isPersonal(s.type)">
+                        <span
+                          style="color:white;  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-weight: 300;font-size:1.1em"
+                        >
+                          {{ s.name }}
+                        </span>
+                      </div>
+                    </li>
+                  </ul>
+                </mat-tab>
+              </mat-tab-group>
+            </mat-card-content>
+            <mat-card-actions> </mat-card-actions>
+          </mat-card>
+        </div>
+      </div>
+      <div class="Bot-Side">
+        <mat-card class="exp-card">
+          <mat-card-header>
+            <div mat-card-avatar>
+              <i
+                style="color:white; display: inline-flex; vertical-align: middle; "
+                class="fas fa-briefcase fa-2x"
+              ></i>
+            </div>
+            <mat-card-title class="default" id="none"
+              >Experience</mat-card-title
+            >
+          </mat-card-header>
+
+          <mat-card-content> </mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+
+  <div class="mobile-container">
+    <div class="Personal">
+      <mat-card class="personal-card">
+        <mat-card-content>
+          <img id="profile" [src]="profile" />
+          <div class="default" style="text-align: center; font-size: 1.5em;">
+            Markham, Ontario
+          </div>
+          <div
+            class="default"
+            style="text-align: center;font-size:1.1em; font-weight:400"
+          >
+            Age: 20
+          </div>
+          <div class="default">Academic Time Line</div>
+
+          <div class="default">Currently: Studying (3A)</div>
+          <div class="default">Next Available Co-op Work Term</div>
+          <div class="default">Work Terms Completed: 1</div>
+        </mat-card-content>
+      </mat-card>
+    </div>
+    <div class="Edu">
+      <mat-card class="edu-card">
+        <mat-card-header>
+          <div mat-card-avatar class="edu-header-image"></div>
+          <mat-card-title class="default">Education</mat-card-title>
+          <mat-card-subtitle class="default"
+            >Carleton University | Ottawa,Ontario</mat-card-subtitle
+          >
+        </mat-card-header>
+        <img style="width: 400px;" mat-card-image [src]="background" />
+        <mat-card-content id="edu-info">
+          <p class="default">Program: B.Eng Electrical Engineering, 3rd Year</p>
+          <p class="default">CGPA: 10.80 / 12.00</p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-button class="default">COURSES TAKEN</button>
+          <button mat-button class="default">AWARDS & SCHOLARSHIPS</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+    <div class="Skills">
+      <mat-card class="skill-card">
+        <mat-card-header>
+          <mat-card-title class="default" id="none">What I Know</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <mat-tab-group mat-align-tabs="end">
+            <mat-tab label="SOFTWARE">
+              <ul>
+                <li *ngFor="let s of skillList">
+                  <div *ngIf="isSoftware(s.type)">
+                    <img
+                      style="width:22px;display: inline-flex; vertical-align: middle;"
+                      [src]="s.icon"
+                      alt=""
+                    />
+                    <span
+                      style="color:white;  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-weight: 300;font-size:14px"
+                    >
+                      {{ s.name }}
+                    </span>
+                  </div>
+                </li>
+              </ul>
+            </mat-tab>
+            <mat-tab label="HARDWARE">
+              <ul>
+                <li *ngFor="let s of skillList">
+                  <div *ngIf="isHardware(s.type)">
+                    <img
+                      style="width:22px;display: inline-flex; vertical-align: middle;"
+                      [src]="s.icon"
+                      alt=""
+                    />
+                    <span
+                      style="color:white;  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-weight: 300;font-size:12px"
+                    >
+                      {{ s.name }}
+                    </span>
+                  </div>
+                </li>
+              </ul>
+            </mat-tab>
+            <mat-tab label="PERSONAL">
+              <ul>
+                <li *ngFor="let s of skillList">
+                  <div *ngIf="isPersonal(s.type)">
+                    <span
+                      style="color:white;  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-weight: 300;font-size:14px"
+                    >
+                      {{ s.name }}
+                    </span>
+                  </div>
+                </li>
+              </ul>
+            </mat-tab>
+          </mat-tab-group>
+        </mat-card-content>
+        <mat-card-actions> </mat-card-actions>
+      </mat-card>
+    </div>
+    <div class="Exp">
+      <mat-card class="exp-card">
+        <mat-card-header>
+          <div mat-card-avatar>
+            <i
+              style="color:white; display: inline-flex; vertical-align: middle; "
+              class="fas fa-briefcase fa-2x"
+            ></i>
+          </div>
+          <mat-card-title class="default" id="none">Experience</mat-card-title>
+        </mat-card-header>
+
+        <mat-card-content> </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+</body>
