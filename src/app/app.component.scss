@@ -15,7 +15,6 @@ $tert-color: #52cebf;
 .third {
   color: $tert-color;
 }
-
 #overlay {
   position: fixed;
   top: 25px;
@@ -25,4 +24,14 @@ $tert-color: #52cebf;
   margin: 0;
   font-weight: 100;
   font-size: 1rem;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+nav {
+  z-index: 2;
 }
