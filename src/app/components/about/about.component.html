@@ -60,24 +60,6 @@
             </mat-card-header>
             <mat-card-content>
               <mat-tab-group mat-align-tabs="end">
-                <mat-tab label="Software Skils">
-                  <ul>
-                    <li *ngFor="let s of skillList">
-                      <div *ngIf="isSoftware(s.type)">
-                        <img
-                          style="width:22px;display: inline-flex; vertical-align: middle;"
-                          [src]="s.icon"
-                          alt=""
-                        />
-                        <span
-                          style="color:white;  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-weight: 300;font-size:1.1em"
-                        >
-                          {{ s.name }}
-                        </span>
-                      </div>
-                    </li>
-                  </ul>
-                </mat-tab>
                 <mat-tab label="Hardware Skills">
                   <ul>
                     <li *ngFor="let s of skillList">
@@ -89,6 +71,24 @@
                         />
                         <span
                           style="color:white;  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-weight: 300;font-size:1.0em"
+                        >
+                          {{ s.name }}
+                        </span>
+                      </div>
+                    </li>
+                  </ul>
+                </mat-tab>
+                <mat-tab label="Software Skils">
+                  <ul>
+                    <li *ngFor="let s of skillList">
+                      <div *ngIf="isSoftware(s.type)">
+                        <img
+                          style="width:22px;display: inline-flex; vertical-align: middle;"
+                          [src]="s.icon"
+                          alt=""
+                        />
+                        <span
+                          style="color:white;  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-weight: 300;font-size:1.1em"
                         >
                           {{ s.name }}
                         </span>

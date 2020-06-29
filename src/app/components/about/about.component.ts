@@ -78,34 +78,43 @@ export class AboutComponent implements OnInit {
       },
       {
         name:
-          "Analog Electronics & Anlaysis | Amplifiers, BJTs, MOSFETS, Filter Circuits",
+          "Analog Design & Verfication | Integrated Amplifiers, Filters, Oscillators",
         type: "2",
         icon: "../assets/skill_icons/analog_icon.png"
       },
       {
-        name: "Digital Electronics Electronics & Anlaysis | TBD ",
+        name:
+          "Digital Design & Verfication | Verilog HDL, System Clocking, UVM, FPGA ",
         type: "2",
         icon: "../assets/skill_icons/digital_icon.png"
       },
       {
-        name: "Arduino Microcontrollers | CPLD's",
+        name: "Microcontroller Architecture | Arduino, Node MCU ",
         type: "2",
         icon: "../assets/skill_icons/arduino_icon.png"
       },
       {
-        name: "Circuit Design | Debugging",
+        name: "Schematic Interpretation and Debugging",
         type: "2",
         icon: "../assets/skill_icons/circuit_icon.png"
       },
       {
-        name:
-          "Circuit Design & Debugging | Xilinx Design Software , PSpice Simulations",
+        name: "Xilinx , PSpice, OrCAD Simulation Software",
         type: "2",
         icon: "../assets/skill_icons/xilinx_icon.jpg"
       },
       {
-        name:
-          "Laboratory Knowledge | Oscilliscope, Electronic Meters, Soldering",
+        name: "Oscilliscopes, Multimeters, Spectral & Network Analyzers",
+        type: "2",
+        icon: "../assets/skill_icons/circuit_icon.png"
+      },
+      {
+        name: "CPU and GPU Architecture | RTL, Assembly",
+        type: "2",
+        icon: "../assets/skill_icons/circuit_icon.png"
+      },
+      {
+        name: "Communication Theory Knowledge | Signal Processing",
         type: "2",
         icon: "../assets/skill_icons/circuit_icon.png"
       },
